@@ -1,5 +1,100 @@
+@use "./mixins";
+
+body {
+    font-family: "Roboto";
+    line-height: 1.4;
+}
+
 .container {
     margin: 0 auto;
-    padding: 0px 30px;
-    max-width: 1260px;
+    padding: 0px 12px;
+    max-width: 1224px;
+
+    @include mixins.mediaLaptop {
+        max-width: 936px;
+    }
+
+    @include mixins.mediaMobile {
+        max-width: 450px;
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 10;
+    position: fixed;
+    top: 20px;
+    left: 12px;
+    right: 12px;
+    padding: 20px;
+
+    backdrop-filter: blur(8px);
+
+    @include mixins.mediaLaptop {
+        top: 0px;
+    }
+
+    @include mixins.mediaMobile {
+        padding: 12px;
+    }
+}
+
+.nav-buttons {
+    display: flex;
+    column-gap: 13px;
+
+    @include mixins.mediaMobile {
+        display: none;
+    }
+
+    & > * {
+        color: #000;
+        background-color: #FECC00;
+
+        padding: 8px 16px;
+        border-radius: 8px;
+
+        transition: background-color 250ms ease-out;
+        &:hover {
+            background-color: #F5B300;
+        }
+        &:active {
+            background-color: #FEE066;
+        }
+    }
+}
+
+.nav-share {
+    display:  flex;
+    column-gap: 8px;
+    align-items: center;
+
+    color: #000;
+    border: solid 1px #000;
+
+    padding: 8px 16px;
+    border-radius: 8px;
+
+    transition-property: background-color color border-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    &:active {
+        border-color: #808080;
+        color: #808080;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    @include mixins.mediaMobile {
+        display: none;
+    }
 }
