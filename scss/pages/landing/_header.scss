@@ -54,6 +54,10 @@
 			max-width: 650px;
 		}
 
+		> img {
+			display: none;
+		}
+
 		@include mixins.mediaMobile {
 			text-align: left;
 
@@ -63,6 +67,10 @@
 
 			> h2 {
 				font-size: 20px;
+			}
+
+			> img {
+				display: unset;
 			}
 		}
 	}
