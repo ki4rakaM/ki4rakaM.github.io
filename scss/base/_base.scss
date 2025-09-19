@@ -99,3 +99,84 @@ body {
     }
 }
 
+.nav-cards {
+    display: flex;
+    column-gap: 20px;
+
+    @include mixins.mediaMobile {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 12px;
+    }
+}
+
+.nav-card {
+    flex: 1 1;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    background-color: #fff;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    transition: box-shadow 250ms ease-out;
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 25.8px 0;
+
+        .nav-card-image {
+            width: 179px;
+            right: -23px;
+        }
+    }
+
+    @include mixins.mediaMobile {
+        width: 370px;
+    }
+}
+
+.nav-card-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    width: 230px;
+
+    line-height: 1.27;
+}
+
+.nav-card-info-top {
+    color: rgba(0, 0, 0, 0.5);
+
+    > h3 {
+        color: #000;
+        font-size: 24px;
+    }
+}
+
+.nav-card-link > span {
+    @include mixins.mediaLaptop {
+        display: none;
+    }
+}
+
+.nav-card-image {
+    position: absolute;
+    bottom: 0px;
+    width: 166px;
+    right: -16px;
+
+    transition-property: width right;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
+
+    @include mixins.mediaLaptop {
+        width: 124px;
+        right: -31px;
+    }
+}
