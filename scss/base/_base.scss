@@ -4,6 +4,9 @@ body {
     font-family: "Roboto";
     line-height: 1.4;
 }
+a {
+    color: inherit;
+}
 
 .container {
     margin: 0 auto;
@@ -159,9 +162,13 @@ body {
     }
 }
 
-.nav-card-link > span {
-    @include mixins.mediaLaptop {
-        display: none;
+.nav-card-link {
+    color: #0640EF;
+
+    &> span {
+        @include mixins.mediaLaptop {
+            display: none;
+        }
     }
 }
 
@@ -179,4 +186,105 @@ body {
         width: 124px;
         right: -31px;
     }
+}
+
+.footer {
+    padding-block: 40px;
+
+    background-color: #1C2126;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.footer-top {
+    display: grid;
+    justify-content: space-between;
+    grid-template-rows: auto 1fr auto;
+
+    height: 113px;
+
+    @include mixins.mediaMobile {
+        height: unset;
+        grid-template-columns: 1fr;
+        row-gap: 40px;
+
+        > img {
+            width: 100%;
+        }
+    }
+}
+
+.footer-top-links {
+    grid-row: 3;
+
+    display: flex;
+    column-gap: 71px;
+
+    @include mixins.mediaMobile {
+        flex-direction: column;
+        align-items: start;
+
+        row-gap: 24px;
+    }
+}
+
+.footer-top-links-other {
+    display: flex;
+    column-gap: 16px;
+}
+
+.footer-top-nav {
+    grid-column: 2;
+    grid-row: 1/4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    color: #fff;
+
+    @include mixins.mediaMobile {
+        grid-column: unset;
+        grid-row: unset;
+
+        row-gap: 32px;
+    }
+}
+
+.footer-top-nav-header {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+.footer-top-nav-links {
+    display: flex;
+    column-gap: 8px;
+
+    @include mixins.mediaMobile {
+        flex-direction: column;
+        row-gap: 8px;
+    }
+}
+
+.footer-top-nav-link {
+    text-align: center;
+
+    padding: 8px;
+
+    border: solid 1px #fff;
+    border-radius: 8px;
+}
+
+.footer-divider {
+    height: 1px;
+    background-color: #B3B3B3;
+}
+
+.footer-bottom {
+    font-size: 14px;
+    color: #B3B3B3;
 }
