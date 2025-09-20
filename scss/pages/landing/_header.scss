@@ -90,7 +90,7 @@
 			grid-auto-flow: row;
 			align-items: center;
 
-			&> *:nth-child(3n) {
+			> *:nth-child(3n) {
 				display: none;
 			}
 		}

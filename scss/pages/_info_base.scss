@@ -1,0 +1,173 @@
+.info {
+	&.admin {
+		.header {
+			background-image: url("/images/svg/bg-admin.svg");
+			background-size: 100% 737px;
+			background-position: 0px 110px;
+		}
+	}
+	.header {
+		padding-top: 100px;
+
+		background-repeat: no-repeat;
+	}
+
+	.header-content {
+		display: flex;
+		flex-direction: column;
+		row-gap: 80px;
+
+		padding-block: 80px;
+	}
+
+	.header-body {
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+
+		> img {
+			position: absolute;
+			right: 0px;
+			bottom: 0px;
+
+			mask-image: linear-gradient(black 80%, transparent);
+		}
+	}
+
+	.header-body-header {
+		display: flex;
+		flex-direction: column;
+		row-gap: 27px;
+
+		width: 670px;
+
+		> h1 {
+			font-size: 80px;
+			font-weight: 700;
+			line-height: 1.1;
+		}
+		> h2 {
+			line-height: 1.5;
+		}
+	}
+
+	.header-body-questions {
+		position: relative;
+		width: 901px;
+		height: 400px;
+	}
+
+	.header-body-question {
+		position: absolute;
+
+		display: flex;
+		flex-direction: column;
+		row-gap: 16px;
+
+		padding: 19px;
+
+		background-color: #FAFAFA;
+		border: solid 1px rgba(0, 0, 0, 0.1);
+		border-radius: 20px;
+		box-shadow: rgba(89, 67, 0, 0.07) 0px 16px 20.4px;
+
+		&.tl {
+			left: 0px;
+			top: 44px;
+			width: 413px;
+		}
+		&.tr {
+			z-index: 1;
+
+			top: 0px;
+			right: 106px;
+			width: 395px;
+		}
+		&.bl {
+			bottom: 0px;
+			left: 88px;
+			width: 436px;
+		}
+		&.br {
+			z-index: 2;
+
+			bottom: 50px;
+			right: 0px;
+			width: 391px;
+		}
+	}
+
+	.header-body-question-top {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		row-gap: 12px;
+
+		font-size: 20px;
+		line-height: 1.3;
+	}
+
+	.header-body-question-options {
+		display: flex;
+		column-gap: 8px;
+	}
+
+	.header-body-question-option {
+		font-size: 12px;
+		color: rgba(0, 0, 0, 0.7);
+		white-space: nowrap;
+		line-height: 1.27;
+
+		padding: 4px 12px;
+
+		background-color: rgba(0, 0, 0, 0.04);
+		border: solid 1px rgba(0, 0, 0, 0.09);
+		border-radius: 30px;
+	}
+
+	.header-bottom {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		color: #325EFF;
+		font-size: 1.27;
+	}
+
+	.header-bottom-arrow {
+		position: relative;
+		height: 32px;
+		width: 24px;
+
+		> img {
+			position: absolute;
+			left: 0px;
+			animation: bottom-arrow 500ms ease-in infinite alternate;
+		}
+	}
+
+	.main {
+		padding-bottom: 80px;
+	}
+
+	.main-content {
+		display: flex;
+		flex-direction: column;
+		row-gap: 80px;
+	}
+
+	.section {
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+	}
+}
+
+@keyframes bottom-arrow {
+	from { top: 0px; }
+	20% { top: 0px; }
+	80% { top: 8px; }
+	to { top: 8px; }
+}

@@ -137,16 +137,16 @@
 
 		padding-block: 20px;
 
+		background-color: #FAFAFA;
+		border: solid 1px rgba(0, 0, 0, 0.1);
+		border-radius: 20px;
+
 		> * {
 			margin-inline: 20px;
 		}
 		> img {
 			margin-left: unset;
 		}
-
-		background-color: #FAFAFA;
-		border: solid 1px rgba(0, 0, 0, 0.1);
-		border-radius: 20px;
 	}
 
 	.main-geography-cities-elem-header {
