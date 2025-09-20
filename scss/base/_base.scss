@@ -46,6 +46,35 @@ a {
 
     @include mixins.mediaMobile {
         padding: 12px;
+
+        &:has(#nav-mobile-checkbox:checked) {
+            .nav-mobile-dropdown {
+                display: flex;
+            }
+
+            .nav-mobile-button {
+                background-image: url("/images/svg/nav-close.svg");
+            }
+        }
+    }
+}
+.landing {
+    .nav {
+        background-color: rgba(255, 231, 149, 0.87);
+
+        border-radius: 20px;
+
+        @include mixins.mediaLaptop {
+            top: 12px;
+        }
+        @include mixins.mediaMobile {
+            background-color: rgba(255, 255, 255, 0.87);
+
+            transition: background-color 250ms ease-out;
+            &:has(#nav-mobile-checkbox:checked) {
+                background-color: #fff;
+            }
+        }
     }
 }
 
@@ -99,6 +128,59 @@ a {
 
     @include mixins.mediaMobile {
         display: none;
+    }
+}
+.nav-share.mobile {
+    @include mixins.mediaMobile {
+        display: flex;
+    }
+}
+
+.nav-mobile-button {
+    display: none;
+
+    width: 24px;
+    height: 24px;
+
+    background-image: url("/images/svg/nav-menu.svg");
+
+    @include mixins.mediaMobile {
+        display: unset;
+    }
+}
+
+#nav-mobile-checkbox {
+    display: none;
+}
+
+.nav-mobile-dropdown {
+    display: none;
+    position: absolute;
+
+    flex-direction: column;
+    align-items: start;
+    row-gap: 80px;
+
+    top: calc(100% + 4px);
+    left: 0px;
+    width: 100%;
+    padding: 12px;
+
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.nav-mobile-dropdown-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+
+    width: 100%;
+    padding-inline: 8px;
+
+    text-decoration: underline;
+    > * {
+        padding-block: 8px;
     }
 }
 
@@ -277,6 +359,15 @@ a {
 
     border: solid 1px #fff;
     border-radius: 8px;
+
+    transition-property: background-color color border-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
+    &:active {
+        border-color: #808080;
+        color: #808080;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 }
 
 .footer-divider {

@@ -1,19 +1,6 @@
 @use "../../base/mixins";
 
 .landing {
-	.nav {
-		background-color: rgba(255, 231, 149, 0.87);
-
-		border-radius: 20px;
-
-		@include mixins.mediaLaptop {
-			top: 12px;
-		}
-		@include mixins.mediaMobile {
-			background-color: rgba(255, 255, 255, 0.87);
-		}
-	}
-
 	.header {
 		background: linear-gradient(125deg, #FFC243, #FECC00 45%, #FFF6D1 100%);
 
