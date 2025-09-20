@@ -4,16 +4,15 @@
 	&.admin {
 		.header {
 			background-image: url("/images/svg/bg-admin-lg.svg");
-			background-size: 100% 737px;
-			background-position: 0px 110px;
+			background-size: 100% 847px;
 
 			@include mixins.mediaLaptop {
 				background-image: url("/images/svg/bg-admin-md.svg");
-				background-position: 0px 249px;
+				background-size: 100% 971px;
 			}
 			@include mixins.mediaMobile {
 				background-image: url("/images/svg/bg-admin-sm.svg");
-				background-position: 0px 115px;
+				background-size: 100% 837px;
 			}
 		}
 	}
@@ -238,6 +237,143 @@
 		display: flex;
 		flex-direction: column;
 		row-gap: 40px;
+
+		> h3 {
+			align-self: flex-start;
+
+			font-weight: 500;
+			line-height: 1.1;
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 5%;
+
+			padding: 12px 20px;
+
+			background-color: #000;
+			border-radius: 20px;
+		}
+	}
+
+	.section-body {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+
+		@include mixins.mediaMobile {
+			grid-template-columns: 1fr
+		}
+	}
+
+	.section-block {
+		display: flex;
+		column-gap: 40px;
+
+		padding: 31px;
+
+		background-color: rgba(0, 0, 0, 0.02);
+		border: solid 1px rgba(0, 0, 0, 0.1);
+		border-radius: 20px;
+
+		&.full-cols {
+			grid-column: 1 / -1;
+
+			@include mixins.mediaMobile {
+				flex-direction: column;
+				row-gap: 20px;
+			}
+		}
+	}
+
+	.block-content {
+		flex: 1 1;
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+		justify-content: end;
+	}
+
+	.block-header {
+		display: flex;
+		flex-direction: column;
+		row-gap: 12px;
+
+		color: rgba(0, 0, 0, 0.5);
+		line-height: 1.1;
+	}
+
+	.block-header-heading {
+		color: #000;
+		font-size: 28px;
+		font-weight: 700;
+	}
+
+	.block-images {
+		display: flex;
+		column-gap: 52px;
+
+		padding-block: 24px;
+	}
+
+	.block-image {
+		display: flex;
+		column-gap: 28px;
+		align-items: end;
+
+		line-height: 1.27;
+	}
+
+	.block-image-percent {
+		font-weight: 900;
+	}
+
+	.block-description {
+		color: rgba(0, 0, 0, 0.5);
+		line-height: 1.5;
+	}
+
+	div + .block-description {
+		@include mixins.mediaMobile {
+			margin-top: 20px;
+		}
+	}
+
+	.block-bars {
+		display: flex;
+		flex-direction: column;
+		row-gap: 8px;
+	}
+
+	.block-bar {
+		z-index: 1;
+		position: relative;
+
+		display: flex;
+		justify-content: space-between;
+
+		line-height: 1.27;
+
+		padding: 10px 20px;
+
+		background-color: rgba(0, 0, 0, 0.03);
+		border-radius: 12px;
+
+		overflow-x: hidden;
+
+		&::before {
+			z-index: -1;
+			position: absolute;
+			content: "";
+
+			inset-block: 0px;
+			left: 0px;
+			width: var(--fill);
+
+			background-color: #FFD351;
+		}
+	}
+
+	.block-bar-percent {
+		font-weight: 900;
 	}
 }
 

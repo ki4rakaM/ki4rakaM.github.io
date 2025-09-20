@@ -1,19 +1,19 @@
-<svg width="390" height="722" viewBox="0 0 390 722" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="false">
-<g filter="url(#filter0_d_144_41279)">
-<path d="M-149 583L-64.6628 403.5L4.02931 521.5L198.616 339L294.443 387L359.224 64L408.115 573.5L460.673 339L669.193 262L700.973 458H810" stroke="url(#paint0_linear_144_41279)" stroke-width="9" shape-rendering="crispEdges"/>
+<svg height="837" viewBox="0 0 390 837" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_4048_34555)">
+<path d="M-149 698L-64.6628 518.5L4.02931 636.5L198.616 454L294.443 502L359.224 179L408.115 688.5L460.673 454L669.193 377L700.973 573H810" stroke="url(#paint0_linear_4048_34555)" stroke-width="9" shape-rendering="crispEdges"/>
 </g>
 <defs>
-<filter id="filter0_d_144_41279" x="-253.073" y="0.11499" width="1163.07" height="721.799" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_4048_34555" x="-253.073" y="115.115" width="1163.07" height="721.799" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="37"/>
 <feGaussianBlur stdDeviation="50"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0.827451 0 0 0 0 0.317647 0 0 0 0.6 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_144_41279"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_144_41279" result="shape"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4048_34555"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4048_34555" result="shape"/>
 </filter>
-<linearGradient id="paint0_linear_144_41279" x1="-149" y1="323.5" x2="810" y2="323.5" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_4048_34555" x1="-149" y1="438.5" x2="810" y2="438.5" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FFD351" stop-opacity="0"/>
 <stop offset="0.168269" stop-color="#FFD351"/>
 <stop offset="0.610577" stop-color="#FFD351"/>
