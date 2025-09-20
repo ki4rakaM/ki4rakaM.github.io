@@ -282,6 +282,10 @@
 				row-gap: 20px;
 			}
 		}
+
+		&.rows-2 {
+			grid-row: span 2;
+		}
 	}
 
 	.block-content {
@@ -289,7 +293,6 @@
 		display: flex;
 		flex-direction: column;
 		row-gap: 20px;
-		justify-content: end;
 	}
 
 	.block-header {
@@ -322,11 +325,13 @@
 		line-height: 1.27;
 	}
 
-	.block-image-percent {
+	.block-percent {
 		font-weight: 900;
 	}
 
 	.block-description {
+		align-self: flex-end;
+
 		color: rgba(0, 0, 0, 0.5);
 		line-height: 1.5;
 	}
@@ -341,6 +346,31 @@
 		display: flex;
 		flex-direction: column;
 		row-gap: 8px;
+
+		line-height: 1.27;
+
+		&.vertical {
+			flex: 1;
+			flex-direction: row;
+			column-gap: 20px;
+		}
+	}
+
+	.block-bars-vertical-elem {
+		flex: 1 1;
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+
+		@include mixins.mediaMobile {
+			min-height: 210px;
+		}
+	}
+
+	.block-bar-vertical-text {
+		align-self: center;
+		display: flex;
+		column-gap: 20px;
 	}
 
 	.block-bar {
@@ -350,30 +380,41 @@
 		display: flex;
 		justify-content: space-between;
 
-		line-height: 1.27;
-
 		padding: 10px 20px;
 
 		background-color: rgba(0, 0, 0, 0.03);
 		border-radius: 12px;
 
-		overflow-x: hidden;
+		overflow: hidden;
 
 		&::before {
 			z-index: -1;
 			position: absolute;
 			content: "";
 
-			inset-block: 0px;
+			bottom: 0px;
 			left: 0px;
+			height: 100%;
 			width: var(--fill);
 
 			background-color: #FFD351;
 		}
+
+		&.vertical {
+			flex: 1;
+
+			&::before {
+				width: 100%;
+				height: var(--fill);
+			}
+		}
 	}
 
-	.block-bar-percent {
-		font-weight: 900;
+	.block-teams {
+		display: flex;
+		column-gap: 8px;
+
+		flex-wrap: wrap;
 	}
 }
 
