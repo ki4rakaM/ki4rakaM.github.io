@@ -116,6 +116,10 @@
 
 		@include mixins.mediaMobile {
 			font-size: 32px;
+
+			> img {
+				width: 135px;
+			}
 		}
 	}
 
