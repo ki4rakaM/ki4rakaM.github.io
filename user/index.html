@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Telemetr</title>
+	<link rel="stylesheet" href="/css/base.css">
+	<link rel="stylesheet" href="/css/info.css">
+</head>
+<body class="info user">
+	<nav class="nav container">
+		<img src="/images/svg/Logo.svg" alt="Telemetr">
+
+		<div class="nav-buttons">
+			<a href="/admin">Администраторы</a>
+			<a href="/advert">Рекламодатели</a>
+			<a href="/user">Пользователи</a>
+		</div>
+
+		<button type="button" class="nav-share">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M19.1918 9.44118L17.2265 7.46899C15.8104 6.04799 15.2554 5.28357 14.4886 5.55381C13.5325 5.89077 13.8472 8.01692 13.8472 8.73471C12.3607 8.73471 10.8152 8.60259 9.34985 8.87787C4.51259 9.78664 3 13.7153 3 18C4.3691 17.0302 5.73683 15.997 7.38233 15.5476C9.43637 14.9865 11.7304 15.2542 13.8472 15.2542C13.8472 15.972 13.5325 18.0982 14.4886 18.4351C15.3575 18.7413 15.8104 17.9409 17.2265 16.5199L19.1918 14.5477C20.3973 13.338 21 12.7332 21 11.9945C21 11.2558 20.3973 10.6509 19.1918 9.44118Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			Поделиться
+		</button>
+
+		<label class="nav-mobile-button">
+			<input type="checkbox" id="nav-mobile-checkbox">
+		</label>
+		<div class="nav-mobile-dropdown">
+			<div class="nav-mobile-dropdown-links">
+				<a href="/admin">Администраторы</a>
+				<a href="/advert">Рекламодатели</a>
+				<a href="/user">Пользователи</a>
+			</div>
+
+			<button type="button" class="nav-share mobile">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M19.1918 9.44118L17.2265 7.46899C15.8104 6.04799 15.2554 5.28357 14.4886 5.55381C13.5325 5.89077 13.8472 8.01692 13.8472 8.73471C12.3607 8.73471 10.8152 8.60259 9.34985 8.87787C4.51259 9.78664 3 13.7153 3 18C4.3691 17.0302 5.73683 15.997 7.38233 15.5476C9.43637 14.9865 11.7304 15.2542 13.8472 15.2542C13.8472 15.972 13.5325 18.0982 14.4886 18.4351C15.3575 18.7413 15.8104 17.9409 17.2265 16.5199L19.1918 14.5477C20.3973 13.338 21 12.7332 21 11.9945C21 11.2558 20.3973 10.6509 19.1918 9.44118Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+				Поделиться
+			</button>
+		</div>
+	</nav>
+
+	<header class="header">
+		<div class="container header-content">
+			<div class="header-body">
+				<div class="header-body-header">
+					<h1>Пользователи</h1>
+					<h2>Изучаем поведение, предпочтения и опыт пользователей Telegram: от целей использования и каналов подписки — до отношения к рекламе, Premium-функциям и вопросам безопасности.</h2>
+				</div>
+
+				<img src="/images/png/info-user.png" alt="">
+
+				<div class="header-body-questions">
+					<div class="header-body-question tl">
+						<div class="header-body-question-top">
+							<img src="/images/svg/question-icon.svg" alt="">
+							Где вы ищите Telegram-каналы?
+						</div>
+						<div class="header-body-question-options">
+							<p class="header-body-question-option">Внутренний поиск</p>
+							<p class="header-body-question-option">Реклама</p>
+							<p class="header-body-question-option">Каталоги</p>
+						</div>
+					</div>
+					<div class="header-body-question tr">
+						<div class="header-body-question-top">
+							<img src="/images/svg/question-icon.svg" alt="">
+							Какое основное преимущество Telegram?
+						</div>
+						<div class="header-body-question-options">
+							<p class="header-body-question-option">Удобство и простота</p>
+							<p class="header-body-question-option">Безопасность</p>
+							<p class="header-body-question-option">Группы и каналы</p>
+						</div>
+					</div>
+					<div class="header-body-question bl">
+						<div class="header-body-question-top">
+							<img src="/images/svg/question-icon.svg" alt="">
+							На сколько каналов вы подписаны?
+						</div>
+						<div class="header-body-question-options">
+							<p class="header-body-question-option">100+</p>
+							<p class="header-body-question-option">50</p>
+							<p class="header-body-question-option">25</p>
+							<p class="header-body-question-option">1-5</p>
+						</div>
+					</div>
+					<div class="header-body-question br">
+						<div class="header-body-question-top">
+							<img src="/images/svg/question-icon.svg" alt="">
+							Какой ваш доход?
+						</div>
+						<div class="header-body-question-options">
+							<p class="header-body-question-option">35 000 ₽</p>
+							<p class="header-body-question-option">55 000 ₽</p>
+							<p class="header-body-question-option">100 000₽</p>
+							<p class="header-body-question-option">200 000₽</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-bottom">
+				Посмотри всё исследование
+				<div class="header-bottom-arrow">
+					<img src="/images/svg/arrow-down.svg" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container main-content">
+
+			<section class="section">
+				<h3>Общая информация</h3>
+
+				<div class="section-body">
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Гендерное распределение</p>
+								Гендерное распределение
+							</div>
+
+							<div class="block-images">
+								<div class="block-image">
+									<img src="/images/svg/man-gradient.svg" alt="">
+
+									<div>
+										<p class="block-percent">56%</p>
+										Мужчины
+									</div>
+								</div>
+								<div class="block-image">
+									<img src="/images/svg/woman-gradient.svg" alt="">
+
+									<div>
+										<p class="block-percent">44%</p>
+										Женщины
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Возрастная структура аудитории</p>
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 24%">
+									26-35 лет
+									<p class="block-percent">24%</p>
+								</div>
+								<div class="block-bar" style="--fill: 22%">
+									36-45 лет
+									<p class="block-percent">22%</p>
+								</div>
+								<div class="block-bar" style="--fill: 19%">
+									21-25 лет
+									<p class="block-percent">19%</p>
+								</div>
+								<div class="block-bar" style="--fill: 13%">
+									15-20 лет
+									<p class="block-percent">13%</p>
+								</div>
+								<div class="block-bar" style="--fill: 12%">
+									46-55 лет
+									<p class="block-percent">12%</p>
+								</div>
+								<div class="block-bar" style="--fill: 8%">
+									Старше 55 лет
+									<p class="block-percent">8%</p>
+								</div>
+								<div class="block-bar" style="--fill: 2%">
+									До 14 лет
+									<p class="block-percent">2%</p>
+								</div>
+							</div>
+
+							<p class="block-description">Хотя ядро аудитории - это работоспособное население 21- 45 лет (65%), Telegram остается универсальной платформой, где представлены все возрастные группы.</p>
+						</div>
+					</div>
+
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Образовательный портрет аудитории</p>
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 44%">
+									Высшее образование
+									<p class="block-percent">44%</p>
+								</div>
+								<div class="block-bar" style="--fill: 14%">
+									Среднее проф.образование
+									<p class="block-percent">14%</p>
+								</div>
+								<div class="block-bar" style="--fill: 14%">
+									Среднее образование
+									<p class="block-percent">14%</p>
+								</div>
+								<div class="block-bar" style="--fill: 9%">
+									Получаю высшее образование
+									<p class="block-percent">9%</p>
+								</div>
+								<div class="block-bar" style="--fill: 7%">
+									Другое
+									<p class="block-percent">7%</p>
+								</div>
+								<div class="block-bar" style="--fill: 5%">
+									Учусь в школе
+									<p class="block-percent">5%</p>
+								</div>
+								<div class="block-bar" style="--fill: 4%">
+									Закончил магистратуру
+									<p class="block-percent">4%</p>
+								</div>
+								<div class="block-bar" style="--fill: 3%">
+									Другое
+									<p class="block-percent">3%</p>
+								</div>
+							</div>
+
+							<p class="block-description">Telegram привлекает высокообразованную аудиторию — 44% пользователей имеют высшее образование, а вместе со студентами эта доля достигает 53%.</p>
+						</div>
+					</div>
+
+					<div class="section-block rows-2">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Сферы деятельности пользователей Telegram</p>
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 21%">
+									Маркетинг и PR
+									<p class="block-percent">21%</p>
+								</div>
+								<div class="block-bar" style="--fill: 15%">
+									Другое
+									<p class="block-percent">15%</p>
+								</div>
+								<div class="block-bar" style="--fill: 9%">
+									IT/Интернет
+									<p class="block-percent">9%</p>
+								</div>
+								<div class="block-bar" style="--fill: 8%">
+									Образование и наука
+									<p class="block-percent">8%</p>
+								</div>
+								<div class="block-bar" style="--fill: 6%">
+									Сфера обслуживания
+									<p class="block-percent">6%</p>
+								</div>
+								<div class="block-bar" style="--fill: 4%">
+									Финансы и экономика
+									<p class="block-percent">4%</p>
+								</div>
+								<div class="block-bar" style="--fill: 4%">
+									Офисная деятельность
+									<p class="block-percent">4%</p>
+								</div>
+								<div class="block-bar" style="--fill: 4%">
+									Здравоохранение
+									<p class="block-percent">4%</p>
+								</div>
+								<div class="block-bar" style="--fill: 4%">
+									Строительство
+									<p class="block-percent">4%</p>
+								</div>
+								<div class="block-bar" style="--fill: 3%">
+									Дизайн
+									<p class="block-percent">3%</p>
+								</div>
+								<div class="block-bar" style="--fill: 3%">
+									Физ.культура и спорт
+									<p class="block-percent">3%</p>
+								</div>
+								<div class="block-bar" style="--fill: 3%">
+									Культура и искусство
+									<p class="block-percent">3%</p>
+								</div>
+								<div class="block-bar" style="--fill: 3%">
+									Гос.служба
+									<p class="block-percent">3%</p>
+								</div>
+								<div class="block-bar" style="--fill: 3%">
+									Юриспруденция
+									<p class="block-percent">3%</p>
+								</div>
+								<div class="block-bar" style="--fill: 10%">
+									Другое
+									<p class="block-percent">10%</p>
+								</div>
+							</div>
+
+							<p class="block-description">Позиции можно разделить на «Независимые специалисты» – Самозанятый + Бизнес. И корпоративная аудитория – рядовой сотрудник + руководитель. И здесь же добавить неработающих.</p>
+						</div>
+					</div>
+
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Позиции пользователей в профессии</p>
+								На какой позиции вы работаете?
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 35%">
+									Самозанятый
+									<p class="block-percent">35%</p>
+								</div>
+								<div class="block-bar" style="--fill: 26%">
+									Неруководящая должность
+									<p class="block-percent">26%</p>
+								</div>
+								<div class="block-bar" style="--fill: 18%">
+									Руководящая должность
+									<p class="block-percent">18%</p>
+								</div>
+								<div class="block-bar" style="--fill: 15%">
+									Не работаю
+									<p class="block-percent">15%</p>
+								</div>
+								<div class="block-bar" style="--fill: 6%">
+									Владелец бизнеса
+									<p class="block-percent">6%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-block full-cols">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Доходы пользователей Telegram</p>
+								Какой ваш доход?
+							</div>
+
+							<div class="block-two-bars">
+								<div class="block-bars">
+									<div class="block-bar" style="--fill: 15%">
+										Менее 10 000 ₽
+										<p class="block-percent">15%</p>
+									</div>
+									<div class="block-bar" style="--fill: 15%">
+										10 000 - 25 000 ₽
+										<p class="block-percent">15%</p>
+									</div>
+									<div class="block-bar" style="--fill: 14%">
+										35 000 - 55 000 ₽
+										<p class="block-percent">14%</p>
+									</div>
+									<div class="block-bar" style="--fill: 13%">
+										25 000 - 35 000 ₽
+										<p class="block-percent">13%</p>
+									</div>
+									<div class="block-bar" style="--fill: 12%">
+										75 000 - 100 000 ₽
+										<p class="block-percent">12%</p>
+									</div>
+								</div>
+								<div class="block-bars">
+									<div class="block-bar" style="--fill: 8%">
+										150 000 - 200 000 ₽
+										<p class="block-percent">8%</p>
+									</div>
+									<div class="block-bar" style="--fill: 8%">
+										100 000 - 150 000 ₽
+										<p class="block-percent">8%</p>
+									</div>
+									<div class="block-bar" style="--fill: 6%">
+										200 000 - 250 000 ₽
+										<p class="block-percent">6%</p>
+									</div>
+									<div class="block-bar" style="--fill: 3%">
+										55 000 - 75 000 ₽
+										<p class="block-percent">3%</p>
+									</div>
+									<div class="block-bar" style="--fill: 6%">
+										Другое
+										<p class="block-percent">6%</p>
+									</div>
+								</div>
+							</div>
+
+							<p class="block-description">Telegram охватывает все доходные группы, но большинство (41%) - это люди со средним заработком (35K–100K ₽).</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<h3>Использование Telegram</h3>
+
+				<div class="section-body">
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Опыт использования Telegram</p>
+								Как давно вы пользуетесь Telegram?
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 28%">
+									От 2-х до 4-х лет
+									<p class="block-percent">28%</p>
+								</div>
+								<div class="block-bar" style="--fill: 23%">
+									От 4-х до 6-и лет
+									<p class="block-percent">23%</p>
+								</div>
+								<div class="block-bar" style="--fill: 16%">
+									От 6-и до 8-и лет
+									<p class="block-percent">16%</p>
+								</div>
+								<div class="block-bar" style="--fill: 12%">
+									Более 8-и лет
+									<p class="block-percent">12%</p>
+								</div>
+								<div class="block-bar" style="--fill: 11%">
+									От 1 года до 2-х лет
+									<p class="block-percent">11%</p>
+								</div>
+								<div class="block-bar" style="--fill: 10%">
+									Менее 1 года
+									<p class="block-percent">10%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Предпочитаемые устройства</p>
+								С какого устройства вы чаще всего пользуетесь Telegram?
+							</div>
+
+							<div class="block-images">
+								<div class="block-image">
+									<img src="/images/svg/phone.svg" alt="">
+
+									<div>
+										<p class="block-percent">83%</p>
+										Телефон
+									</div>
+								</div>
+								<div class="block-image">
+									<img src="/images/svg/computer.svg" alt="">
+
+									<div>
+										<p class="block-percent">17%</p>
+										Компьютер
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-block full-cols">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Ключевые преимущества Telegram</p>
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 44%">
+									Удобство и простота
+									<p class="block-percent">44%</p>
+								</div>
+								<div class="block-bar" style="--fill: 28%">
+									Группы и каналы
+									<p class="block-percent">28%</p>
+								</div>
+								<div class="block-bar" style="--fill: 20%">
+									Безопасность
+									<p class="block-percent">20%</p>
+								</div>
+								<div class="block-bar" style="--fill: 8%">
+									Другое
+									<p class="block-percent">8%</p>
+								</div>
+							</div>
+						</div>
+						<p class="block-content block-description">
+							Почти половина пользователей ценят Telegram за удобство и простоту.<br>
+							Второй ключевой фактор - каналы и группы (28%). Это делает Telegram по-настоящему уникальным.<br>
+							Безопасность важна для 20% аудитории, но это не основная причина выбора.
+						</p>
+					</div>
+
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Использование других мессенджеров</p>
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 56%">
+									Пользуюсь WhatsApp
+									<p class="block-percent">56%</p>
+								</div>
+								<div class="block-bar" style="--fill: 23%">
+									Пользуюсь др. мессенджером
+									<p class="block-percent">23%</p>
+								</div>
+								<div class="block-bar" style="--fill: 21%">
+									Нет
+									<p class="block-percent">21%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-block rows-2">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Цель использования Telegram</p>
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 20%">
+									Личная переписка
+									<p class="block-percent">20%</p>
+								</div>
+								<div class="block-bar" style="--fill: 19%">
+									Читаю каналы
+									<p class="block-percent">19%</p>
+								</div>
+								<div class="block-bar" style="--fill: 16%">
+									Рабочая переписка
+									<p class="block-percent">16%</p>
+								</div>
+								<div class="block-bar" style="--fill: 9%">
+									Пользуюсь ботами
+									<p class="block-percent">9%</p>
+								</div>
+								<div class="block-bar" style="--fill: 7%">
+									Звоню
+									<p class="block-percent">7%</p>
+								</div>
+								<div class="block-bar" style="--fill: 7%">
+									Для заметок
+									<p class="block-percent">7%</p>
+								</div>
+								<div class="block-bar" style="--fill: 6%">
+									Веду бизнес-аккаунт
+									<p class="block-percent">6%</p>
+								</div>
+								<div class="block-bar" style="--fill: 6%">
+									Скачиваю файлы
+									<p class="block-percent">6%</p>
+								</div>
+								<div class="block-bar" style="--fill: 5%">
+									Для всех
+									<p class="block-percent">5%</p>
+								</div>
+								<div class="block-bar" style="--fill: 4%">
+									Облачное хранилище
+									<p class="block-percent">4%</p>
+								</div>
+								<div class="block-bar" style="--fill: 1%">
+									Играю
+									<p class="block-percent">1%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Активность пользователей в Telegram</p>
+								Как часто вы заходите в Telegram?
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 79%">
+									Очень часто
+									<p class="block-percent">79%</p>
+								</div>
+								<div class="block-bar" style="--fill: 15%">
+									3-5 раз в день
+									<p class="block-percent">15%</p>
+								</div>
+								<div class="block-bar" style="--fill: 4%">
+									Раз в день
+									<p class="block-percent">4%</p>
+								</div>
+								<div class="block-bar" style="--fill: 2%">
+									Другое
+									<p class="block-percent">2%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="section">
+				<h3>Подписки и каналы</h3>
+
+				<div class="section-body">
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Количество подписок на каналы</p>
+								На сколько каналов вы подписаны?
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 17%">
+									100 + каналов
+									<p class="block-percent">17%</p>
+								</div>
+								<div class="block-bar" style="--fill: 16%">
+									25-50 каналов
+									<p class="block-percent">16%</p>
+								</div>
+								<div class="block-bar" style="--fill: 14%">
+									16-25 каналов
+									<p class="block-percent">14%</p>
+								</div>
+								<div class="block-bar" style="--fill: 13%">
+									50-100 каналов
+									<p class="block-percent">13%</p>
+								</div>
+								<div class="block-bar" style="--fill: 14%">
+									6-10 каналов
+									<p class="block-percent">14%</p>
+								</div>
+								<div class="block-bar" style="--fill: 11%">
+									11-15 каналов
+									<p class="block-percent">11%</p>
+								</div>
+								<div class="block-bar" style="--fill: 11%">
+									1-5 каналов
+									<p class="block-percent">11%</p>
+								</div>
+								<div class="block-bar" style="--fill: 4%">
+									Не подписан на каналы
+									<p class="block-percent">4%</p>
+								</div>
+							</div>
+
+							<p class="block-description">Основная масса пользователей (62%) подписаны на 6-100+ каналов, что подтверждает роль Telegram как контент-платформы.</p>
+						</div>
+					</div>
+
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Где вы ищите Telegram-каналы?</p>
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 35%">
+									Внутренний поиск
+									<p class="block-percent">35%</p>
+								</div>
+								<div class="block-bar" style="--fill: 26%">
+									Реклама
+									<p class="block-percent">26%</p>
+								</div>
+								<div class="block-bar" style="--fill: 16%">
+									Другое
+									<p class="block-percent">16%</p>
+								</div>
+								<div class="block-bar" style="--fill: 13%">
+									В браузере
+									<p class="block-percent">13%</p>
+								</div>
+								<div class="block-bar" style="--fill: 10%">
+									Каталоги
+									<p class="block-percent">10%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Уровень доверия к источникам информации</p>
+								Чему вы больше доверяете?
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 56%">
+									Telegam-каналам
+									<p class="block-percent">56%</p>
+								</div>
+								<div class="block-bar" style="--fill: 35%">
+									Другое
+									<p class="block-percent">35%</p>
+								</div>
+								<div class="block-bar" style="--fill: 5%">
+									ТВ
+									<p class="block-percent">5%</p>
+								</div>
+								<div class="block-bar" style="--fill: 4%">
+									Видеохостингам
+									<p class="block-percent">4%</p>
+								</div>
+								<div class="block-bar" style="--fill: 2%">
+									Слухам в чатах
+									<p class="block-percent">2%</p>
+								</div>
+							</div>
+
+							<p class="block-description">Telegram-канал стал главным доверенным источником для 55% пользователей, обогнав традиционные СМИ</p>
+						</div>
+					</div>
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Платные каналы</p>
+								Подписаны ли вы на платные каналы?
+							</div>
+
+							<div class="block-bars vertical">
+								<div class="block-bars-vertical-elem">
+									<div class="block-bar vertical" style="--fill: 17%"></div>
+									<div class="block-bar-vertical-text">
+										Да
+										<p class="block-percent">17%</p>
+									</div>
+								</div>
+
+								<div class="block-bars-vertical-elem">
+									<div class="block-bar vertical" style="--fill: 83%"></div>
+									<div class="block-bar-vertical-text">
+										Нет
+										<p class="block-percent">83%</p>
+									</div>
+								</div>
+							</div>
+
+							<p class="block-description">Несмотря на то, что 83% пользователей остаются в зоне бесплатного контента, почти каждый пятый демонстрирует готовность платить за эксклюзивный контент.</p>
+						</div>
+					</div>
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Настройки уведомлений</p>
+								Включены ли у вас Push-уведомления?
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 36%">
+									Выключены на всех
+									<p class="block-percent">36%</p>
+								</div>
+								<div class="block-bar" style="--fill: 32%">
+									Включены для 1-5 каналов
+									<p class="block-percent">32%</p>
+								</div>
+								<div class="block-bar" style="--fill: 18%">
+									Включены на всех
+									<p class="block-percent">18%</p>
+								</div>
+								<div class="block-bar" style="--fill: 9%">
+									Включены для 6-10 каналов
+									<p class="block-percent">9%</p>
+								</div>
+								<div class="block-bar" style="--fill: 5%">
+									Включены для более 10 каналов
+									<p class="block-percent">5%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Использование функции архив</p>
+								Отправляете ли вы каналы в архив?
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 38%">
+									Да, но редко
+									<p class="block-percent">38%</p>
+								</div>
+								<div class="block-bar" style="--fill: 32%">
+									Да, часто
+									<p class="block-percent">32%</p>
+								</div>
+								<div class="block-bar" style="--fill: 25%">
+									Нет
+									<p class="block-percent">25%</p>
+								</div>
+								<div class="block-bar" style="--fill: 5%">
+									Не знаю, что это
+									<p class="block-percent">5%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<h3>Безопасность и мошенничество</h3>
+
+				<div class="section-body">
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Распространённость спама</p>
+								Получаете ли вы СПАМ?
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 50%">
+									Да, редко
+									<p class="block-percent">50%</p>
+								</div>
+								<div class="block-bar" style="--fill: 29%">
+									Не получаю
+									<p class="block-percent">29%</p>
+								</div>
+								<div class="block-bar" style="--fill: 21%">
+									Да, часто
+									<p class="block-percent">21%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Сталкивались ли вы с мошенничеством в Telegram?</p>
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 49%">
+									Нет
+									<p class="block-percent">49%</p>
+								</div>
+								<div class="block-bar" style="--fill: 29%">
+									Да, чуть не обманули
+									<p class="block-percent">29%</p>
+								</div>
+								<div class="block-bar" style="--fill: 22%">
+									Да, обманывали
+									<p class="block-percent">22%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section-block full-cols">
+						<p class="block-content block-description">
+							Спам — острая проблема: 71% пользователей получают нежелательные сообщения (каждый пятый — регулярно).<br>
+							Мошенничество встречается реже: 51% так или иначе сталкивались с обманом, но 49% не имели негативного опыта, что указывает на приемлемый уровень безопасности платформы.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="section">
+				<h3>Монетизация</h3>
+
+				<div class="section-body">
+					<div class="section-block full-cols">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Использование Telegram Premium</p>
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 49%">
+									Да, редко
+									<p class="block-percent">49%</p>
+								</div>
+								<div class="block-bar" style="--fill: 43%">
+									Нет
+									<p class="block-percent">43%</p>
+								</div>
+								<div class="block-bar" style="--fill: 9%">
+									Пользовался, но перестал
+									<p class="block-percent">9%</p>
+								</div>
+							</div>
+						</div>
+						<p class="block-content block-description">Почти половина опрошенных готова платить за дополнительные функции, что подтверждает ценность премиум-подписки.</p>
+					</div>
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Покупка Telegram Stars</p>
+								Покупали ли вы Telegram Stars?
+							</div>
+
+							<div class="block-bars vertical">
+								<div class="block-bars-vertical-elem">
+									<div class="block-bar vertical" style="--fill: 18%"></div>
+									<div class="block-bar-vertical-text">
+										Да
+										<p class="block-percent">18%</p>
+									</div>
+								</div>
+
+								<div class="block-bars-vertical-elem">
+									<div class="block-bar vertical" style="--fill: 82%"></div>
+									<div class="block-bar-vertical-text">
+										Нет
+										<p class="block-percent">82%</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section-block">
+						<div class="block-content">
+							<div class="block-header">
+								<p class="block-header-heading">Мотивация покупки Telegram Stars</p>
+								Зачем вы покупали Telegram Stars?
+							</div>
+
+							<div class="block-bars">
+								<div class="block-bar" style="--fill: 80%">
+									Не покупал Telegram Stars
+									<p class="block-percent">80%</p>
+								</div>
+								<div class="block-bar" style="--fill: 10%">
+									Дарить подарки
+									<p class="block-percent">10%</p>
+								</div>
+								<div class="block-bar" style="--fill: 8%">
+									Лайкать посты
+									<p class="block-percent">8%</p>
+								</div>
+								<div class="block-bar" style="--fill: 2%">
+									Telegram Ads
+									<p class="block-percent">2%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="section-block full-cols">
+						<p class="block-content block-description">
+							Спам — острая проблема: 71% пользователей получают нежелательные сообщения (каждый пятый — регулярно).<br>
+							Мошенничество встречается реже: 51% так или иначе сталкивались с обманом, но 49% не имели негативного опыта, что указывает на приемлемый уровень безопасности платформы.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<div class="nav-cards">
+				<a href="/admin" class="nav-card">
+					<div class="nav-card-info">
+						<div class="nav-card-info-top">
+							Опрос
+							<h3 class="bold">Администраторы</h3>
+						</div>
+						<p class="nav-card-info-description">Зачем создают канал, что и как публикуют, как зарабатывают</p>
+					</div>
+
+					<div class="nav-card-link">
+						Перейти<span> к исследованию</span>
+						<img src="/images/svg/arrow-right.svg">
+					</div>
+
+					<img class="nav-card-image" src="/images/png/guy-admin.png">
+				</a>
+				<a href="/advert" class="nav-card">
+					<div class="nav-card-info">
+						<div class="nav-card-info-top">
+							Опрос
+							<h3 class="bold">Рекламодатели</h3>
+						</div>
+						<p class="nav-card-info-description">Что хотят получить, как подбирают каналы, как оценивают результат</p>
+					</div>
+
+					<div class="nav-card-link">
+						Перейти<span> к исследованию</span>
+						<img src="/images/svg/arrow-right.svg">
+					</div>
+
+					<img class="nav-card-image" src="/images/png/guy-advert.png" alt="">
+				</a>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container footer-content">
+			<div class="footer-top">
+				<img src="/images/svg/telemetr-x-elana-white.svg" alt="">
+
+				<div class="footer-top-links">
+					<a href="#!"><img src="/images/svg/l-sk.svg" alt=""></a>
+
+					<div class="footer-top-links-other">
+						<a href="#!"><img src="/images/svg/l-tg.svg" alt=""></a>
+						<a href="#!"><img src="/images/svg/l-vk.svg" alt=""></a>
+						<a href="#!"><img src="/images/svg/l-dz.svg" alt=""></a>
+						<a href="#!"><img src="/images/svg/l-rt.svg" alt=""></a>
+						<a href="#!"><img src="/images/svg/l-yt.svg" alt=""></a>
+					</div>
+				</div>
+
+				<div class="footer-top-nav">
+					<p class="footer-top-nav-header">Исследование аудитории<br>Telegram-рынка</p>
+					<div class="footer-top-nav-links">
+						<a href="/admin" class="footer-top-nav-link">Администраторы</a>
+						<a href="/user" class="footer-top-nav-link">Пользователи</a>
+						<a href="/advert" class="footer-top-nav-link">Рекламодатели</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-divider"></div>
+			<p class="footer-bottom">© Telemetr, 2017–2024. Все права защищены.</p>
+		</div>
+	</footer>
+</body>
+</html>

@@ -10,34 +10,43 @@
 			padding-top: 80px;
 		}
 	}
-	&.admin {
-		.header {
-			background-image: url("/images/svg/bg-admin-lg.svg");
-			background-size: 100% 847px;
+	&.admin .header {
+		background-image: url("/images/svg/bg-admin-lg.svg");
+		background-size: 100% 847px;
 
-			@include mixins.mediaLaptop {
-				background-image: url("/images/svg/bg-admin-md.svg");
-				background-size: 100% 971px;
-			}
-			@include mixins.mediaMobile {
-				background-image: url("/images/svg/bg-admin-sm.svg");
-				background-size: 100% 837px;
-			}
+		@include mixins.mediaLaptop {
+			background-image: url("/images/svg/bg-admin-md.svg");
+			background-size: 100% 971px;
+		}
+		@include mixins.mediaMobile {
+			background-image: url("/images/svg/bg-admin-sm.svg");
+			background-size: 100% 837px;
 		}
 	}
-	&.advert {
-		.header {
-			background-image: url("/images/svg/bg-advert-lg.svg");
-			background-size: 100% 850px;
+	&.advert .header {
+		background-image: url("/images/svg/bg-advert-lg.svg");
+		background-size: 100% 850px;
 
-			@include mixins.mediaLaptop {
-				background-image: url("/images/svg/bg-advert-md.svg");
-				background-size: 100% 886px;
-			}
-			@include mixins.mediaMobile {
-				background-image: url("/images/svg/bg-advert-sm.svg");
-				background-size: 100% 707px;
-			}
+		@include mixins.mediaLaptop {
+			background-image: url("/images/svg/bg-advert-md.svg");
+			background-size: 100% 886px;
+		}
+		@include mixins.mediaMobile {
+			background-image: url("/images/svg/bg-advert-sm.svg");
+			background-size: 100% 707px;
+		}
+	}
+	&.user .header {
+		background-image: url("/images/svg/bg-user-lg.svg");
+		background-size: 100% 850px;
+
+		@include mixins.mediaLaptop {
+			background-image: url("/images/svg/bg-user-md.svg");
+			background-size: 100% 790px;
+		}
+		@include mixins.mediaMobile {
+			background-image: url("/images/svg/bg-user-sm.svg");
+			background-size: 100% 735px;
 		}
 	}
 
@@ -76,32 +85,33 @@
 			row-gap: 34px;
 		}
 	}
-	&.admin {
-		.header-body {
-			> img {
-				@include mixins.mediaLaptop {
-					top: 0px;
-				}
-				@include mixins.mediaMobile {
-					top: 92px;
-					right: 15px;
-					width: 129px;
-				}
-			}
+	&.admin .header-body > img {
+		@include mixins.mediaLaptop {
+			top: 0px;
+		}
+		@include mixins.mediaMobile {
+			top: 92px;
+			right: 15px;
+			width: 129px;
 		}
 	}
-	&.advert {
-		.header-body {
-			> img {
-				@include mixins.mediaLaptop {
-					top: -27px;
-					right: -48px;
-				}
-				@include mixins.mediaMobile {
-					top: 79px;
-					width: 160px;
-				}
-			}
+	&.advert .header-body > img {
+		@include mixins.mediaLaptop {
+			top: -27px;
+			right: -48px;
+		}
+		@include mixins.mediaMobile {
+			top: 79px;
+			width: 160px;
+		}
+	}
+	&.user .header-body > img {
+		@include mixins.mediaLaptop {
+			top: 0px;
+		}
+		@include mixins.mediaMobile {
+			top: 130px;
+			width: 162px;
 		}
 	}
 
@@ -132,6 +142,11 @@
 			}
 		}
 	}
+	&.user .header-body-header > h2 {
+		@include mixins.mediaMobile {
+			width: 295px;
+		}
+	}
 
 	.header-body-questions {
 		position: relative;
@@ -139,7 +154,7 @@
 		height: 400px;
 		@include mixins.mediaMobile {
 			width: unset;
-			height: 650px;
+			height: 642px;
 		}
 	}
 
@@ -186,7 +201,7 @@
 			&.tl {
 				left: 0px;
 				top: 0px;
-				width: 333px;
+				width: 350px;
 			}
 			&.tr {
 				z-index: 1;
@@ -209,6 +224,11 @@
 			}
 		}
 	}
+	&.user .bl {
+		@include mixins.mediaMobile {
+			z-index: 3;
+		}
+	}
 
 	.header-body-question-top {
 		display: flex;
@@ -222,7 +242,7 @@
 
 	.header-body-question-options {
 		display: flex;
-		column-gap: 8px;
+		gap: 8px;
 		flex-wrap: wrap;
 	}
 
@@ -352,6 +372,7 @@
 		column-gap: 52px;
 
 		padding-block: 24px;
+		margin-block: auto;
 	}
 
 	.block-image {
@@ -388,6 +409,19 @@
 	div + .block-description {
 		@include mixins.mediaMobile {
 			margin-top: 20px;
+		}
+	}
+
+	.block-two-bars {
+		display: flex;
+		column-gap: 40px;
+
+		> * {
+			flex: 1 1;
+		}
+		@include mixins.mediaMobile {
+			flex-direction: column;
+			row-gap: 8px;
 		}
 	}
 
