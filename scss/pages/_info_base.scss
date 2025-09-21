@@ -1,6 +1,15 @@
 @use "../base/mixins";
 
 .info {
+	.header {
+		padding-top: 100px;
+
+		background-repeat: no-repeat;
+
+		@include mixins.mediaLaptop {
+			padding-top: 80px;
+		}
+	}
 	&.admin {
 		.header {
 			background-image: url("/images/svg/bg-admin-lg.svg");
@@ -16,13 +25,19 @@
 			}
 		}
 	}
-	.header {
-		padding-top: 100px;
+	&.advert {
+		.header {
+			background-image: url("/images/svg/bg-advert-lg.svg");
+			background-size: 100% 850px;
 
-		background-repeat: no-repeat;
-
-		@include mixins.mediaLaptop {
-			padding-top: 80px;
+			@include mixins.mediaLaptop {
+				background-image: url("/images/svg/bg-advert-md.svg");
+				background-size: 100% 886px;
+			}
+			@include mixins.mediaMobile {
+				background-image: url("/images/svg/bg-advert-sm.svg");
+				background-size: 100% 707px;
+			}
 		}
 	}
 
@@ -54,17 +69,39 @@
 
 			@include mixins.mediaLaptop {
 				bottom: unset;
-				top: 0px;
-			}
-			@include mixins.mediaMobile {
-				top: 92px;
-				right: 15px;
-				width: 129px;
 			}
 		}
 
 		@include mixins.mediaMobile {
 			row-gap: 34px;
+		}
+	}
+	&.admin {
+		.header-body {
+			> img {
+				@include mixins.mediaLaptop {
+					top: 0px;
+				}
+				@include mixins.mediaMobile {
+					top: 92px;
+					right: 15px;
+					width: 129px;
+				}
+			}
+		}
+	}
+	&.advert {
+		.header-body {
+			> img {
+				@include mixins.mediaLaptop {
+					top: -27px;
+					right: -48px;
+				}
+				@include mixins.mediaMobile {
+					top: 79px;
+					width: 160px;
+				}
+			}
 		}
 	}
 
@@ -102,7 +139,7 @@
 		height: 400px;
 		@include mixins.mediaMobile {
 			width: unset;
-			height: 615px;
+			height: 650px;
 		}
 	}
 
@@ -338,7 +375,7 @@
 		}
 
 		> ul > li {
-			margin-left: 16px;
+			margin-left: 22px;
 			list-style: disc;
 
 			@include mixins.mediaMobile {
