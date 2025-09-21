@@ -25,6 +25,9 @@ a {
 .bold {
     font-weight: 700;
 }
+.justify-between {
+    justify-content: space-between;
+}
 
 .nav {
     display: flex;
@@ -263,7 +266,14 @@ a {
     transition-duration: 250ms;
     transition-timing-function: ease-out;
 
-    @include mixins.mediaLaptop {
+    &:not(.info *) {
+        @include mixins.mediaLaptop {
+            width: 124px;
+            right: -31px;
+        }
+    }
+
+    @include mixins.mediaMobile {
         width: 124px;
         right: -31px;
     }

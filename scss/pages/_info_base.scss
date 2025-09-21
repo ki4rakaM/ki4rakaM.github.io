@@ -330,10 +330,22 @@
 	}
 
 	.block-description {
-		align-self: flex-end;
-
 		color: rgba(0, 0, 0, 0.5);
 		line-height: 1.5;
+
+		&.block-content {
+			align-self: flex-end;
+		}
+
+		> ul > li {
+			margin-left: 16px;
+			list-style: disc;
+
+			@include mixins.mediaMobile {
+				margin-left: unset;
+				list-style-position: inside;
+			}
+		}
 	}
 
 	div + .block-description {
