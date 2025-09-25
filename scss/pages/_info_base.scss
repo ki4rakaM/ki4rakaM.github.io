@@ -368,6 +368,10 @@
 		color: #000;
 		font-size: 28px;
 		font-weight: 700;
+
+		@include mixins.mediaMobile {
+			font-size: 20px;
+		}
 	}
 
 	.block-images {
