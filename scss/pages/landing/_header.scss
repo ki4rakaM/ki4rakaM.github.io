@@ -78,6 +78,7 @@
 	.header-bottom-stats {
 		display: grid;
 		column-gap: 20px;
+		align-items: center;
 		grid-auto-flow: column;
 		grid-template-columns: auto auto 50px auto auto 50px auto auto;
 
@@ -88,7 +89,6 @@
 		@include mixins.mediaMobile {
 			grid-template-columns: auto auto;
 			grid-auto-flow: row;
-			align-items: center;
 
 			> *:nth-child(3n) {
 				display: none;
@@ -98,6 +98,7 @@
 
 	.header-bottom-stats-number {
 		font-weight: 900;
+		font-size: 24px;
 
 		@include mixins.mediaMobile {
 			font-weight: 400;
