@@ -32,6 +32,38 @@ a {
 	font-weight: 700;
 }
 
+#share-popup {
+	z-index: 100;
+	position: fixed;
+
+	display: flex;
+	column-gap: 6px;
+	align-items: center;
+
+	padding: 8px;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+
+	background-color: #000;
+	border-radius: 8px;
+
+	color: #fff;
+	font-size: 14px;
+
+	animation: popup 2.5s ease-in-out 1;
+
+	> svg {
+		color: #808080;
+	}
+}
+@keyframes popup {
+	0% {top: 100%}
+	10% {top: calc(100% - 55px)}
+	90% {top: calc(100% - 55px)}
+	100% {top: 100%}
+}
+
 .nav {
 	display: flex;
 	justify-content: space-between;
